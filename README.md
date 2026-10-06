@@ -33,34 +33,6 @@ La aplicación integra inteligencia artificial mediante "OpenRouter" y el "AI SD
 
 La respuesta se procesa mediante streaming para mostrar el contenido progresivamente.
 
-Estructura del proyecto
-
-text
-src/
-├── components/
-│ ├── Header.vue
-│ ├── Modal.vue
-│ ├── Notificacion.vue
-│ └── Receta.vue
-├── lib/
-│ ├── axios.js
-│ └── ia.js
-├── router/
-│ └── index.js
-├── services/
-│ ├── APIService.js
-│ └── IAService.js
-├── stores/
-│ ├── bebidas.js
-│ ├── favoritos.js
-│ ├── ia.js
-│ ├── modal.js
-│ └── notificaciones.js
-└── views/
-├── FavoritosView.vue
-├── IAView.vue
-└── InicioView.vue
-
 Instalación
 
 Clona el repositorio:
