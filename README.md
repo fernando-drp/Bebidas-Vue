@@ -1,44 +1,92 @@
-# bebidas-vueF
+Bebidas-Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicación web para buscar y consultar recetas de bebidas, desarrollada con Vue 3.
 
-## Recommended IDE Setup
+El proyecto permite buscar bebidas por ingredientes y categorías, consultar sus recetas, guardar bebidas favoritas y generar recetas mediante inteligencia artificial.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Funcionalidades
 
-## Recommended Browser Setup
+- 🔎 Búsqueda de bebidas por ingrediente.
+- 🏷️ Filtrado por categoría.
+- 📖 Visualización detallada de recetas.
+- ❤️ Sistema de favoritos.
+- 🤖 Generación de recetas mediante inteligencia artificial.
+- 🔔 Notificaciones para mejorar la experiencia del usuario.
+- 📱 Diseño responsive.
+- 🧭 Navegación mediante Vue Router.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Tecnologías
 
-## Customize configuration
+- Vue 3
+- Pinia
+- Vue Router
+- Axios
+- Tailwind CSS
+- JavaScript
+- Vite
+- OpenRouter
+- AI SDK
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Inteligencia Artificial
 
-## Project Setup
+La aplicación integra inteligencia artificial mediante "OpenRouter" y el "AI SDK", permitiendo generar recetas de bebidas a partir de las instrucciones proporcionadas por el usuario.
 
-```sh
+La respuesta se procesa mediante streaming para mostrar el contenido progresivamente.
+
+Estructura del proyecto
+
+text
+src/
+├── components/
+│ ├── Header.vue
+│ ├── Modal.vue
+│ ├── Notificacion.vue
+│ └── Receta.vue
+├── lib/
+│ ├── axios.js
+│ └── ia.js
+├── router/
+│ └── index.js
+├── services/
+│ ├── APIService.js
+│ └── IAService.js
+├── stores/
+│ ├── bebidas.js
+│ ├── favoritos.js
+│ ├── ia.js
+│ ├── modal.js
+│ └── notificaciones.js
+└── views/
+├── FavoritosView.vue
+├── IAView.vue
+└── InicioView.vue
+
+Instalación
+
+Clona el repositorio:
+
+git clone https://github.com/fernando-drp/Bebidas-Vue.git
+
+Entra al proyecto:
+cd Bebidas-Vue
+
+Instala las dependencias:
 npm install
-```
 
-### Compile and Hot-Reload for Development
+🔐 Variables de entorno
 
-```sh
+Crea un archivo .env en la raíz del proyecto y agrega las variables necesarias para la integración con la API y la inteligencia artificial.
+El archivo .env no se encuentra incluido en el repositorio por motivos de seguridad.
+
+💻 Ejecutar el proyecto
+
+Para iniciar el servidor de desarrollo:
 npm run dev
-```
 
-### Compile and Minify for Production
-
-```sh
+Compilar para producción
 npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
+👨‍💻 Autor
+Fernando De La Rosa Palma
 
-```sh
-npm run lint
-```
+Ingeniero en TICs | Desarrollo Web
